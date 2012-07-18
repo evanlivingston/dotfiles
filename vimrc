@@ -1,6 +1,12 @@
 " Compatibility
 set nocompatible
 
+
+" Plugins
+silent! call pathogen#infect()
+silent! call pathogen#helptags()
+
+
 " syntax
 syntax on
 
