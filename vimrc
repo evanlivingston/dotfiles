@@ -34,9 +34,7 @@ nmap <C-t> :tabnew<CR>
 
 "Gundo
 nnoremap <F5> :GundoToggle<CR>
-call pathogen#infect()
 
-colorscheme mustang
 
 
 if filereadable(glob("~/.vimrc.local"))

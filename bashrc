@@ -25,7 +25,10 @@ PS1='\[\e[31m\]\u: \w \! > \[\e[0m\]'
 
 #COLORS!
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+ export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Tell grep to highlight matches
+export GREP_OPTIONS='--color=auto'
 
 # Run local file if it exists.
 [[ -e "${HOME}/.bashrc.local" ]] && source "${HOME}/.bashrc.local"
