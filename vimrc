@@ -5,6 +5,8 @@ set nocompatible
 " Plugins
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
+"numbers.vim
+nnoremap <F3> :NumbersToggle<CR>
 
 
 " syntax
