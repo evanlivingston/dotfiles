@@ -5,9 +5,6 @@ set nocompatible
 " Plugins
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
-"numbers.vim
-nnoremap <F3> :NumbersToggle<CR>
-
 
 " syntax
 syntax on
@@ -39,8 +36,7 @@ nmap <C-t> :tabnew<CR>
 nnoremap <F5> :GundoToggle<CR>
 call pathogen#infect()
 
-silent! colorscheme lucius
-set background=dark
+colorscheme mustang
 
 
 if filereadable(glob("~/.vimrc.local"))
