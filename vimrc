@@ -22,6 +22,12 @@ set history=1000
 
 set nobackup
 
+" scrolling with mouse is the future!
+set mouse=a
+
+" highlighting
+nmap <silent> ,/ :nohlsearch<CR>
+
 " Swaps
 set noswapfile
 
@@ -34,6 +40,12 @@ nmap <C-t> :tabnew<CR>
 
 "Gundo
 nnoremap <F5> :GundoToggle<CR>
+
+"NERDTree
+map <F2> :NERDTreeToggle<CR>
+
+" pasting
+set pastetoggle=<F3>
 
 
 
