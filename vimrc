@@ -38,15 +38,13 @@ nmap <C-b> :tabprevious<CR>
 nmap <C-n> :tabnext<CR>
 nmap <C-t> :tabnew<CR>
 
-"Gundo
-nnoremap <F5> :GundoToggle<CR>
 
 "NERDTree
 map <F2> :NERDTreeToggle<CR>
 
 " pasting
 set pastetoggle=<F3>
-
+set laststatus=2
 
 
 if filereadable(glob("~/.vimrc.local"))
