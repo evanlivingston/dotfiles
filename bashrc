@@ -8,6 +8,10 @@ export NCURSES_NO_UTF8_ACS=1
 unset HISTFILESIZE
 HISTSIZE=1000000
 
+# History Grep
+alias hg='history | grep'
+alias hgu='history -a; history -n; cat ~/.bash_history | sed '\''s/^ *//g'\'' | sed '\''s/ *$//g'\'' | sort | uniq | grep'
+
 # Ignore duplicate commands and whitespace in history.
 HISTCONTROL=ignoreboth
 
