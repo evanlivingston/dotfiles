@@ -22,8 +22,13 @@ set history=1000
 
 set nobackup
 
+" mouse off
 set mouse=c
 
+" Gutter
+set nu
+nmap <F6> :set invnumber<CR>
+set numberwidth=3
 " highlighting
 nmap <silent> ,/ :nohlsearch<CR>
 
