@@ -22,8 +22,7 @@ set history=1000
 
 set nobackup
 
-" scrolling with mouse is the future!
-set mouse=a
+set mouse=c
 
 " highlighting
 nmap <silent> ,/ :nohlsearch<CR>
@@ -46,6 +45,7 @@ map <F2> :NERDTreeToggle<CR>
 set pastetoggle=<F3>
 set laststatus=2
 
+colorscheme slate
 
 if filereadable(glob("~/.vimrc.local"))
 		source ~/.vimrc.local

@@ -1,9 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/usr/share/nginx/evanl/web/unity/wwwroot'
-let g:netrw_dirhist_2='/usr/share/nginx/evanl/web/seed'
-let g:netrw_dirhist_3='/usr/share/nginx/evanl/web/henny-penny'
-let g:netrw_dirhist_4='/usr/share/nginx/evanl/web/seed'
-let g:netrw_dirhist_5='/usr/share/nginx/evanl/web/unity/wwwroot/err'
-let g:netrw_dirhist_6='/usr/share/nginx/evanl/web/offers'
-let g:netrw_dirhist_7='/usr/share/nginx/evanl/web/scripts'
+let g:netrw_dirhist_cnt =0
