@@ -1,10 +1,20 @@
 " Compatibility
 set nocompatible
 
+filetype plugin indent on
 
 " Plugins
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
+
+" vimclojure
+let vimclojure#FuzzyIndent=1
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#HighlightContrib=1
+let vimclojure#DynamicHighlighting=1
+let vimclojure#ParenRainbow=1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = "/usr/local/bin/ng" 
 
 " syntax
 syntax on
@@ -36,11 +46,8 @@ nmap <silent> ,/ :nohlsearch<CR>
 set noswapfile
 
 " tabs
-map <C-n> :tabnext<CR>
-map <C-b> :tabprevious<CR>
-nmap <C-b> :tabprevious<CR>
-nmap <C-n> :tabnext<CR>
-nmap <C-t> :tabnew<CR>
+:set expandtab
+:retab
 
 
 "NERDTree
