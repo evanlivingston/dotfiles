@@ -7,15 +7,6 @@ filetype plugin indent on
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
-" vimclojure
-let vimclojure#FuzzyIndent=1
-let vimclojure#HighlightBuiltins = 1
-let vimclojure#HighlightContrib=1
-let vimclojure#DynamicHighlighting=1
-let vimclojure#ParenRainbow=1
-let vimclojure#WantNailgun = 1
-let vimclojure#NailgunClient = "/usr/local/bin/ng" 
-
 " syntax
 syntax on
 
@@ -50,9 +41,11 @@ set noswapfile
 :set expandtab
 :retab
 
-
 "NERDTree
 map <F2> :NERDTreeToggle<CR>
+
+"tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " pasting
 set pastetoggle=<F3>
