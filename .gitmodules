@@ -19,3 +19,6 @@
 [submodule "vim/vim.symlink/bundle/tagbar"]
 	path = vim/vim.symlink/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
+[submodule "vim/vim.symlink/bundle/mediummode"]
+	path = vim/vim.symlink/bundle/mediummode
+	url = git://github.com/kbarrette/mediummode.git
