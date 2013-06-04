@@ -16,8 +16,8 @@ syntax on
 set autoread
 
 " Formatting
-set tabstop=4
-set softtabstop=4
+set tabstop=5
+set softtabstop=6
 set shiftwidth=4
 set shiftround
 
@@ -33,6 +33,10 @@ set mouse=c
 set nu
 nmap <F6> :set invnumber<CR>
 set numberwidth=3
+" Always show line numbers, but only in current window.
+:au WinEnter * :setlocal number
+:au WinLeave * :setlocal nonumber
+
 " highlighting
 nmap <silent> ,/ :nohlsearch<CR>
 
