@@ -59,6 +59,8 @@ set laststatus=2
 
 colorscheme slate
 
+" so many semis 
+inoremap <leader>; <C-o>A;
 
 if filereadable(glob("~/.vimrc.local"))
 		source ~/.vimrc.local
