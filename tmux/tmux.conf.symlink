@@ -35,3 +35,22 @@ neww -n foo/bar foo
 splitw -v -p 50 -t 0 bar
 selectw -t 1 
 selectp -t 0
+
+ # Toggle mouse on with ^B m
+bind m \
+  set -g mode-mouse on \;\
+  set -g mouse-resize-pane on \;\
+  set -g mouse-select-pane on \;\
+  set -g mouse-select-window on \;\
+  display 'Mouse: ON'
+
+# Toggle mouse off with ^B M
+bind M \
+  set -g mode-mouse off \;\
+  set -g mouse-resize-pane off \;\
+  set -g mouse-select-pane off \;\
+  set -g mouse-select-window off \;\
+  display 'Mouse: OFF'
+
+#reload tmux conf with Prefix + r
+bind r source-file ~/.tmux.conf \; display "Reloaded tmux.conf"
