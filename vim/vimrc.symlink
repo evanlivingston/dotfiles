@@ -8,6 +8,9 @@ filetype plugin indent on
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
 
+map tn :tabnew<CR>
+map th :tabprev<CR>
+map tl :tabnext<CR>
 
 " syntax
 syntax on

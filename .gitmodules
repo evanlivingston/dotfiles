@@ -31,3 +31,6 @@
 [submodule "vim/vim.symlink/bundle/ack"]
 	path = vim/vim.symlink/bundle/ack
 	url = https://github.com/mileszs/ack.vim
+[submodule "vim/vim.symlink/bundle/golden-ratio"]
+	path = vim/vim.symlink/bundle/golden-ratio
+	url = git://github.com/roman/golden-ratio.git
