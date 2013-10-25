@@ -3,7 +3,6 @@ set nocompatible
 
 filetype plugin indent on
 
-
 " Plugins
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
@@ -26,6 +25,7 @@ set shiftround
 
 " History
 set history=1000
+set hidden
 
 set nobackup
 
@@ -64,6 +64,8 @@ colorscheme slate
 
 " so many semis 
 inoremap <leader>; <C-o>A;
+
+:syntax enable
 
 if filereadable(glob("~/.vimrc.local"))
 		source ~/.vimrc.local

@@ -18,17 +18,13 @@ setw -g mode-mouse on
 #faster command sequences
 set -s escape-time 0
 
-
-set -g status-right ‘#[fg=yellow]#(uptime | cut -d “,” -f 2-)’
-
 # Automatically set window title
-#setw -g automatic-rename on
-
+setw -g automatic-rename on
 
 # Set status bar
-set -g status-bg black
-set -g status-fg white
-set -g status-left ‘#[fg=green]#H’
+#set -g status-bg black
+#set -g status-fg white
+#set -g status-left ‘#[fg=green]#H’
 
 new  -s SessionName -n WindowName Command
 neww -n foo/bar foo
@@ -54,3 +50,16 @@ bind M \
 
 #reload tmux conf with Prefix + r
 bind r source-file ~/.tmux.conf \; display "Reloaded tmux.conf"
+
+#status line
+set -g status-fg white
+set -g status-bg colour234
+# set -g status-bg default #set for transparent background
+set -g window-status-activity-attr bold
+set -g pane-border-fg colour245
+set -g pane-active-border-fg colour39
+set -g message-fg colour16
+set -g message-bg colour221
+set -g message-attr bold
+set -g status-left '#[fg=green](#S) #(whoami)@#H#[default]'
+set -g status-right '#[fg=blue]%Y-%m-%d #[fg=white]%H:%M#[default]'''

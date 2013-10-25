@@ -34,3 +34,15 @@
 [submodule "vim/vim.symlink/bundle/golden-ratio"]
 	path = vim/vim.symlink/bundle/golden-ratio
 	url = git://github.com/roman/golden-ratio.git
+[submodule "vim/vim.symlink/bundle/javascript"]
+	path = vim/vim.symlink/bundle/javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/vim.symlink/bundle/mustache"]
+	path = vim/vim.symlink/bundle/mustache
+	url = git://github.com/juvenn/mustache.vim.git
+[submodule "vim/vim.symlink.bundle/neatstatus"]
+	path = vim/vim.symlink.bundle/neatstatus
+	url = git://github.com/maciakl/vim-neatstatus.git
+[submodule "vim/vim.symlink/bundle/neatstatus"]
+	path = vim/vim.symlink/bundle/neatstatus
+	url = git://github.com/maciakl/vim-neatstatus.git
