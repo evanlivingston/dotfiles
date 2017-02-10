@@ -5,7 +5,7 @@
         protocol = https
 [user]
         name = evanlivingston
-        email = evanlivingston@gmail.com
+        email = evan@scanpower.com
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
