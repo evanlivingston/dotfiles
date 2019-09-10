@@ -1,10 +1,14 @@
+Host gitlab
+    HostName 52.10.102.222
+    User ubuntu
+    IdentityFile ~/.ssh/admin-key-pair-oregon.pem
 
-IdentityFile ~/Documents/_Work/inCirrus/inkey
-ControlMaster auto
-ControlPath /tmp/ssh_mux_%h_%p_%r
-ControlPersist 5m
+Host gitlab-runner
+    HostName 54.190.168.217
+    User ubuntu
+    IdentityFile ~/.ssh/admin-key-pair-oregon.pem
 
-Host evan-livingston.com
-User ec2-user
-IdentityFile ~/.ssh/amazonAWS.pem
 
+Host 127.0.0.1
+   StrictHostKeyChecking no
+   UserKnownHostsFile=/dev/null

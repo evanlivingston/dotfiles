@@ -10,10 +10,6 @@ alias ..='cd ../../'
 alias ...='cd ../../../'
 alias ....='cd ../../../../'
 
-# SSH
-alias evan="ssh -i ~/.ssh/devkey.pem evan-livingston.com"
-alias scanpower="ssh incirrusdev.com"
-
 # Git
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
