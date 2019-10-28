@@ -1,0 +1,55 @@
+[legacy]
+schema-version=uint32 3
+theme-variant='dark'
+
+[legacy/profiles:]
+list=['65b3085f-0c3d-40bc-8370-5cf9b47026e2', '8c9169ca-ce5b-4c5f-9967-c1ffb3ecb35a']
+default='8c9169ca-ce5b-4c5f-9967-c1ffb3ecb35a'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(0,43,54)'
+foreground-color='rgb(131,148,150)'
+use-theme-colors=false
+
+[legacy/profiles:/:65b3085f-0c3d-40bc-8370-5cf9b47026e2]
+bold-color='#9393a1a1a1a1'
+bold-color-same-as-fg=false
+background-color='rgb(0,43,54)'
+cursor-shape='block'
+cursor-colors-set=false
+default-size-columns=120
+use-theme-colors=false
+font='Ubuntu Mono Bold 16'
+use-theme-background=false
+default-size-rows=70
+use-system-font=false
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(133,153,0)', 'rgb(181,137,0)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(114,127,130)', 'rgb(203,75,22)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+visible-name='One Dark'
+foreground-color='rgb(131,148,150)'
+bold-is-bright=false
+highlight-colors-set=false
+audible-bell=false
+use-theme-transparency=true
+
+[legacy/profiles:/:8c9169ca-ce5b-4c5f-9967-c1ffb3ecb35a]
+visible-name='Earthsong'
+bold-color='#e5e5c7c7a9a9'
+bold-color-same-as-fg=true
+highlight-foreground-color='#'
+background-color='#292925252020'
+cursor-shape='block'
+cursor-colors-set=false
+default-size-columns=120
+use-theme-background=false
+font='Ubuntu Mono Bold 16'
+use-theme-colors=false
+default-size-rows=70
+use-system-font=false
+palette=['#121214141818', '#c9c942423434', '#8585c5c54c4c', '#f5f5aeae2e2e', '#13139898b9b9', '#d0d063633d3d', '#505095955252', '#e5e5c6c6aaaa', '#67675f5f5454', '#ffff64645a5a', '#9898e0e03636', '#e0e0d5d56161', '#5f5fdadaffff', '#ffff92926969', '#8484f0f08888', '#f6f6f7f7ecec']
+highlight-background-color='#'
+foreground-color='#e5e5c7c7a9a9'
+allow-bold=true
+bold-is-bright=false
+highlight-colors-set=true
+audible-bell=false
+use-theme-transparency=false

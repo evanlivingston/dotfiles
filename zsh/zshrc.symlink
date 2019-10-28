@@ -1,45 +1,22 @@
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+# Path to your oh-my-zsh installation.
+export ZSH="/home/elivingston/.oh-my-zsh"
 
-#ZSH_THEME="alanpeabody"
+ZSH_THEME="bira"
 
-# your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+plugins=(git zsh-autosuggestions)
 
-alias tma='tmux attach -d -t'
-alias git-tmux='tmux new -s $(basename $(pwd))'
+source $ZSH/oh-my-zsh.sh
 
-# use .localrc for SUPER SECRET CRAP that you don't
-# want in your public, versioned repo.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
 fi
 
-# all of our zsh files
-typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+eval `dircolors ~/.dir_colors/dircolors`
 
-# load the path files
-for file in ${(M)config_files:#*/path.zsh}
-do
-  source $file
-done
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+gpg-connect-agent updatestartuptty /bye
 
-# load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
-do
-  source $file
-done
-
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
-
-# load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}
-do
-  source $file
-done
-
-unset config_files
+setopt noincappendhistory
+setopt nosharehistory
