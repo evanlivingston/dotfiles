@@ -1,0 +1,40 @@
+[global_config]
+  extra_styling = False
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  title_use_system_font = False
+[keybindings]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    cursor_color = "#aaaaaa"
+    foreground_color = "#839496"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+  [[Afterglow]]
+    background_color = "#212121"
+    cursor_color = "#d0d0d0"
+    foreground_color = "#d0d0d0"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#151515:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#d0d0d0:#505050:#ac4142:#7e8e50:#e5b567:#6c99bb:#9f4e85:#7dd6cf:#f5f5f5"
+  [[BirdsOfParadise]]
+    background_color = "#2a1f1d"
+    cursor_color = "#573d26"
+    foreground_color = "#e0dbb7"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    palette = "#573d26:#be2d26:#6ba18a:#e99d2a:#5a86ad:#ac80a6:#74a6ad:#e0dbb7:#9b6c4a:#e84627:#95d8ba:#d0d150:#b8d3ed:#d19ecb:#93cfd7:#fff9d5"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = BirdsOfParadise
+[plugins]
