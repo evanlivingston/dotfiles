@@ -542,12 +542,6 @@ function! Multiple_cursors_after()
   endif
 endfunction
 
-" ========= vim-better-whitespace ==================
-
-" auto strip whitespace except for file with extention blacklisted
-let blacklist = ['diff', 'gitcommit', 'unite', 'qf', 'help', 'markdown']
-autocmd BufWritePre * if index(blacklist, &ft) < 0 | StripWhitespace
-
 " ========= vim-markdown ==================
 
 " disable folding
