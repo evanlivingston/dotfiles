@@ -4,8 +4,8 @@
 [hub]
         protocol = https
 [user]
-        name = elivingston
-        email = livingston@designateddriver.ai
+	name = Evan Livingston
+	email = evanlivingston@gmail.com
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
@@ -28,3 +28,5 @@
         prompt = false
 [help]
         autocorrect = 1
+[url "https://"]
+	insteadOf = git://
